@@ -1,0 +1,42 @@
+<!--
+Desarrollar una vista en la que el usuario pueda visualizar una cuadrícula de N x M.
+
+La cuadrícula se debe ajustar según el tamaño de la pantalla, debe ser responsive.
+
+En cada celda se debe mostrar el nombre de un país y su bandera
+
+Al hacer click en una celda se debe mostrar un popup con más información del pais
+
+En la parte superior la vista tendrá un campo en el que podrá escribir el nombre de un país para filtrar.
+
+El filtro actuará en tiempo real mientras el usuario está escribiendo, no se debe presionar ningún botón.
+El filtro debe soportar mayúsculas y minúsculas por igual, es decir, será lo mismo si el usuario escribe
+“ARGENTINA” o “Argentina” o “ArGenTINA”, etc.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ejercicio 3- Tabla paises</title>
+</head>
+<body>
+    <header class="encabezado-buscador">
+        <input type="text" name="pais" id="buscador-pais" placeholder="Pais a buscar">
+    </header>
+
+    <main class="tabla-paises">
+
+    </main>
+    <dialog class="modal">
+        <div class="description-country">
+
+        </div>
+        <button class="close">Cerrar</button>
+    </dialog>
+    <script src="./index.js"></script>
+</body>
+</html>
